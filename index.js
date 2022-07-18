@@ -3,11 +3,11 @@ const axios = require('axios');
 const client = new Client({ intents: 32767 });
 
 client.on('ready', () => {
- console.log('bot açıldı'); 
+ console.log('bot started'); 
 });
 
 client.on('messageCreate', (message) => {
-	if(message.content === '!deneme') {
+	if(message.content === '!test') {
 		message.reply({
 			content: 'testing',
 			components:[{ type: 1, components: [{
