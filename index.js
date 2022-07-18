@@ -9,9 +9,9 @@ client.on('ready', () => {
 client.on('messageCreate', (message) => {
 	if(message.content === '!deneme') {
 		message.reply({
-			content: 'Deneyebilirsinizzz',
+			content: 'testing',
 			components:[{ type: 1, components: [{
-				type: 2, custom_id: 'button', label: 'Denemek İçin Tıkla', style: 'PRIMARY',
+				type: 2, custom_id: 'button', label: 'cilck me', style: 'PRIMARY',
 			}] }],
 		});
 	}
@@ -27,16 +27,16 @@ client.on('interactionCreate', async (interaction) => {
 		data: {
 			type: 9,
 			data: {
-				title: 'LosKros Register',
-				custom_id: 'register',
+				title: 'Yunak Test',
+				custom_id: 'test',
 				components: [
 					{
 						type: 1,
 						components: [
 							{
 								type: 4,
-								custom_id: 'registerr',
-								label: 'İsim girmelisin?',
+								custom_id: 'testt',
+								label: 'how are you?',
 								style: 1,
 								min_length: 2,
 								max_length: 400,
